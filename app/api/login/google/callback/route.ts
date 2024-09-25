@@ -5,8 +5,6 @@ import { createGoogleUserUseCase } from "@/app/use-cases/users";
 import { getAccountByGoogleIdUseCase } from "@/app/use-cases/accounts";
 import { setSession } from "@/app/lib/session";
 
-export const runtime = "edge";
-
 export async function GET(request: Request): Promise<Response> {
   const url = new URL(request.url);
   const code = url.searchParams.get("code");

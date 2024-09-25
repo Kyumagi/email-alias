@@ -5,8 +5,6 @@ import { FaGoogle } from "react-icons/fa6";
 import { getCurrentUser } from "@/app/lib/session";
 import { redirect } from "next/navigation";
 
-export const runtime = "edge";
-
 export default async function Home() {
   const user = await getCurrentUser();
 

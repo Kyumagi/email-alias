@@ -2,8 +2,6 @@ import { googleAuth } from "@/app/lib/auth";
 import { cookies } from "next/headers";
 import { generateCodeVerifier, generateState } from "arctic";
 
-export const runtime = "edge";
-
 export async function GET(): Promise<Response> {
   const state = generateState();
   const codeVerifier = generateCodeVerifier();

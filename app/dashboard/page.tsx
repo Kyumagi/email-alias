@@ -12,7 +12,6 @@ import AliasesTable from "../ui/AliasesTable";
 import AddAliasInput from "@/app/ui/AddAliasInput";
 import { getUser } from "@/app/data-access/users";
 
-export const runtime = "edge";
 const profilerLoader = cache(getUserProfileUseCase);
 
 export default async function Dashboard() {
